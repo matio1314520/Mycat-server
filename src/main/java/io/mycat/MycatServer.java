@@ -462,7 +462,7 @@ public class MycatServer {
                     + "Server", system.getBindIp(), system.getServerPort(), sf, reactorPool);
         }
         // manager start
-        manager.start();
+        manager.start(); //启动线程了
         LOGGER.info(manager.getName() + " is started and listening on " + manager.getPort());
         server.start();
 
